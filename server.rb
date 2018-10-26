@@ -7,6 +7,10 @@ require_relative 'lib/code_running.rb'
 
 # TODO: Change highlight color in editor to match background color.
 
+# TODO: Add support to change editor color schemes.
+#       Could also add option in config to specify which theme goes with
+#       which color scheme.
+
 # TODO: Add option in config to denote syntax highlighting for each language,
 #       that way adding languages would be much easier (assuming there's a
 #       syntax highlighting scheme close enough), as then there would just

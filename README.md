@@ -5,7 +5,7 @@
 - [About](https://github.com/JCabr/homepage#about)
 - [Installation](https://github.com/JCabr/homepage#installation)
 - [Configuration](https://github.com/JCabr/homepage#configuration)
-- [Modification](https://github.com/JCabr/homepage#modifcation)
+- [Modification](https://github.com/JCabr/homepage#modification)
 
 ## About
 
