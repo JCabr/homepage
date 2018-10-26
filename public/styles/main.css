@@ -1,0 +1,40 @@
+
+body {
+    background-color: var(--main-background);
+    color: var(--main-text);
+    font: var(--main-font)
+}
+
+.terminal-text
+{
+    font-family: var(--main-font);
+}
+
+.terminal-starter
+{
+    font-family: var(--main-font);
+}
+
+.terminal-starter::before
+{
+    content: '[jrdn@HOME ';
+    color: #23d18b;
+}
+
+.terminal-starter::after
+{
+    content: ']$ ';
+    color: #23d18b;
+}
+
+.label-box-lit
+{
+    background-color: var(--active-background);
+    color: var(--main-background);
+}
+
+.label-box-dim
+{
+    background-color: var(--inactive-background);
+    color: var(--inactive-foreground);
+}

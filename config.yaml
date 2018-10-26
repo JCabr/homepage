@@ -1,0 +1,88 @@
+
+color schemes:
+  - adapta nokto
+  - black
+
+default color scheme: adapta nokto
+
+bookmark tree:
+  General:
+    Discord:
+      link: https://discordapp.com/channels/@me
+    YouTube:
+      link: https://www.youtube.com/
+    Reddit:
+      link: https://www.reddit.com
+    Amazon:
+      link: https://www.amazon.com/gp/css/homepage.html/ref=nav_youraccount_ya
+
+  Programming:
+    GitHub:
+      link: https://www.github.com
+    Bitbucket:
+      link: https://bitbucket.org/dashboard/overview
+
+  School:
+    EMCC:
+      link: "https://csoprodpub.maricopa.edu/psp/PMCPAJ/STUDENT/HRMS/c\
+            /SA_LEARNER_SERVICES.\
+            SSS_STUDENT_CENTER.GBL?"
+
+code languages:
+  - 'ruby'
+  - 'crystal'
+  - 'python'
+  - 'javascript'
+  - 'coffeescript'
+  - 'typescript'
+  - 'c'
+  - 'cpp'
+  - 'csharp'
+  - 'java'
+  - 'kotlin'
+  - 'kotlinscript'
+  - 'scala'
+  - 'scalascript'
+  - 'shell'
+
+primary code language: ruby
+
+local:
+  styles:
+    - main
+    - containers/appwindow
+    - sections/titlebar
+    - sections/mainbox
+    - sections/bookmarks
+    - sections/bottombox
+    - sections/bottombar
+    - sections/statusbar
+    - sections/searchbar
+
+  scripts:
+    - main.js
+    - code.js
+    - title.js
+    - status.js
+    - bookmarks.js
+
+dependencies:
+  codemirror:
+    styles:
+      - lib/codemirror.css
+      - theme/jrdn.css
+      - theme/jrdn-gutterless.css
+      - theme/dracula.css
+      - theme/isotope.css
+    scripts:
+      - lib/codemirror.js
+      - mode/python/python.js
+      - mode/ruby/ruby.js
+      - mode/javascript/javascript.js
+      - mode/clike/clike.js
+      - mode/shell/shell.js
+  
+  general:
+    scripts:
+      - libs/jquery-3.3.1.min.js
+      - libs/dateFormat.min.js

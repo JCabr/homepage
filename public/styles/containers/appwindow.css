@@ -1,0 +1,14 @@
+
+.app-window
+{
+  /* max-width: 93vw;
+  margin: 1.5vh auto 0 auto; */
+  margin: 0 0 0 0;
+  margin-top: -12px;
+  margin-left: -12px;
+  margin-right: -8px;
+  border: var(--medium-border);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

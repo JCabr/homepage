@@ -1,0 +1,97 @@
+!!! html
+%html(lang="en")
+    %head
+        %meta(charset="utf-8")
+        %title $HOME
+
+        / Color Scheme Style
+        %link(rel="stylesheet" href="styles/colors/#{color_scheme}.css")
+
+        / Local Styles
+        - local_styles.each do |local_css|
+            %link(rel="stylesheet" href="styles/#{local_css}.css")
+
+        / Codemirror Assets
+        - dependencies['codemirror']['styles'].each do |codemirror_css|
+            %link{rel: "stylesheet", href: "codemirror-5.38.0/#{codemirror_css}"}
+        
+        - dependencies['codemirror']['scripts'].each do |codemirror_js|
+            %script{src: "codemirror-5.38.0/#{codemirror_js}"}
+
+        / Dynamically add in code mirror theme here; theme files can be
+        / accessed outside of codemirror folder :thumbsup:
+        %link(rel = "stylesheet" href = "TEST.css")
+
+        / Script Dependencies
+        - dependencies['general']['scripts'].each do |required_js|
+            %script{src: "scripts/#{required_js}"}
+        
+        / Local Scripts
+        - local_scripts.each do |local_js|
+            %script{src: "scripts/#{local_js}"}
+
+    %body
+        .app-window
+            .app-title-bar
+                #app-close-button.app-titlebar-button.close
+                #app-min-button.app-titlebar-button.min
+                #app-max-button.app-titlebar-button.max
+                .app-titlebar-spacer
+
+            .app-search-bar
+                %span#search-tag.label-box-lit Search
+                %form(method="get" action="https://www.google.com/search")
+                    %input#search-input(type="text"
+                                        autofocus="autofocus"
+                                        name="q"
+                    )
+
+            .app-main-box
+                #bookmark-tree
+                    - bookmark_tree.each do |folder, items|
+                        .bookmark-tree-folder
+                            %header.bookmark-tree-folder-label=folder
+                            %nav
+                                %ul.bookmark-tree-folder-list
+                                    - items.each do |item, attrs|
+                                        - icon_img="images/site icons/#{item.downcase}_icon.png"
+                                        
+                                        %li
+                                            %a.bookmark-link{href: attrs["link"]}
+                                                %img.site-logo{src: icon_img}=item
+                #code-input-box
+                    %textarea#code-input-field
+
+            .app-bottom-bar
+                #code-output-mode-button.label-box-lit.bottombar-option Code Output
+                #code-clear-button.bottombar-button
+                #code-reset-button.bottombar-button
+                #code-run-button.bottombar-button
+
+            .app-bottom-box
+                #code-output
+                    %textarea#code-output-field(readonly)
+
+            .app-status-bar
+                #status-bar-label.app-status-bar-item.label-box-lit
+                    Status
+                #status-bar-time-label.app-status-bar-item.label-box-dim
+                    TIME
+                #status-bar-time.app-status-bar-item.label-box-dim
+                    00:00:00 XX
+                #status-bar-date-label.app-status-bar-item.label-box-dim
+                    DATE
+                #status-bar-date.app-status-bar-item.label-box-dim
+                    00/00/00 XX
+                #status-bar-lang.app-status-bar-item.label-box-dim
+                    LANG
+                
+                - primary_lang = config['primary code language']
+
+                %img#lang-selection.lang-selection{src: "images/lang icons/#{primary_lang}_icon.png" }
+
+            #code-lang-option-container
+                - code_languages.each do |lang|
+                    - icon_img = "images/lang icons/#{lang}_icon.png"
+                    .code-lang-option{id: "#{lang}-lang-option"}
+                        %img.lang-icon{src: icon_img}

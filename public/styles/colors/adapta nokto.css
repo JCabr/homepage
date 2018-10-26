@@ -1,0 +1,16 @@
+/* #1b2326 #263238 */
+:root {
+    --main-background:      #1b2326;
+    --main-text:            #CCCCCC;
+    --main-font:            'Courier New', 'Courier';
+    --main-padding:         2px 5px 2px 5px;
+    --main-border-color:    #263238;
+    --main-border-width:    3px;
+    --main-border-line:     solid;
+    --medium-border:        var(--main-border-width) var(--main-border-line) var(--main-border-color);
+    --active-background:    #49575E;
+    --inactive-background: #2F3D44;
+    --active-foreground:    #1b2326;
+    --inactive-foreground:  #8D999F;
+    --site-icon-brightness: 40%;
+}

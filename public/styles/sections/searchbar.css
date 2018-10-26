@@ -1,0 +1,31 @@
+
+.app-search-bar
+{
+    border-bottom: var(--medium-border);
+    padding: 7px 5px 5px 10px;
+}
+
+form
+{
+    display: inline;
+}
+
+input[type=text]
+{
+    background-color: var(--main-background);
+    border: none;
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--main-text);
+}
+
+#search-input
+{
+    width: 75vw;
+    padding-left: 5px;
+}
+
+#search-tag
+{
+    padding: var(--main-padding);
+}

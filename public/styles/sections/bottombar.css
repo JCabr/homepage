@@ -1,0 +1,54 @@
+
+.app-bottom-bar
+{
+    border-top: var(--medium-border);
+    padding-left: 5px;
+    display: flex;
+}
+
+.bottombar-option
+{
+    cursor: pointer;
+    padding: var(--main-padding);
+    margin: 5px 5px 5px 5px;
+}
+
+.bottombar-button
+{
+    cursor: pointer;
+    padding: var(--main-padding);
+    border-left: var(--medium-border);
+    font-size: 22px;
+}
+
+#code-clear-button
+{
+    margin-left: auto;
+    color:#fc5753;
+}
+
+#code-clear-button::before
+{
+    content: '⊘';
+}
+
+#code-reset-button
+{
+    color: #23d18b;
+}
+
+#code-reset-button::before
+{
+    content: '↺';
+    font-size: 18px;
+}
+
+#code-run-button
+{
+    color: #32c747;
+}
+
+#code-run-button::before
+{
+    content: '▶';
+}

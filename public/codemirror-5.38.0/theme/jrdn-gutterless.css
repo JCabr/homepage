@@ -1,0 +1,41 @@
+/*
+
+    Name:       jrdn-gutterless
+    Author:     David Desandro / Jan T. Sott
+
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-codemirror)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-jrdn-gutterless.CodeMirror {background: #000000; color: #708394;}
+.cm-s-jrdn-gutterless div.CodeMirror-selected
+{ background: #090909 !important; }
+.cm-s-jrdn-gutterless .CodeMirror-gutters 
+{
+    background: #000; border-right: none;
+}
+.cm-s-jrdn-gutterless .CodeMirror-linenumber 
+{
+    color: #808080; padding-right: 5px; font-weight: bold;
+}
+.cm-s-jrdn-gutterless .CodeMirror-cursor {border-left: 1px solid #c0c0c0 !important;}
+
+.cm-s-jrdn-gutterless span.cm-comment {color: #5f38ff;}
+.cm-s-jrdn-gutterless span.cm-atom {color: #22d4bd;}
+.cm-s-jrdn-gutterless span.cm-number {color: #22d4bd;}
+
+.cm-s-jrdn-gutterless span.cm-property, .cm-s-jrdn-gutterless span.cm-attribute {color: #25a2a6;}
+.cm-s-jrdn-gutterless span.cm-keyword {color: #25a2a6;}
+.cm-s-jrdn-gutterless span.cm-string {color: #04da93;}
+
+.cm-s-jrdn-gutterless span.cm-variable {color: #00875a;}
+.cm-s-jrdn-gutterless span.cm-variable-2 {color: #fe3030;}
+.cm-s-jrdn-gutterless span.cm-def {color: #00875a; font-weight: bold; }
+.cm-s-jrdn-gutterless span.cm-error {background: #ff0000; color: #c0c0c0;}
+.cm-s-jrdn-gutterless span.cm-bracket {color: #708394;}
+.cm-s-jrdn-gutterless span.cm-tag {color: #22d4bd;}
+.cm-s-jrdn-gutterless span.cm-link {color: #22d4bd;}
+
+.cm-s-jrdn-gutterless .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;}
+.cm-s-jrdn-gutterless .CodeMirror-activeline-background { background: #202020; }

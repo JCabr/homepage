@@ -1,0 +1,60 @@
+
+#bookmark-tree
+{
+    border-right: var(--medium-border);
+    padding: 10px 15px 10px 15px;
+}
+
+.bookmark-tree-folder
+{
+    
+}
+
+.bookmark-tree-folder-label
+{
+    cursor: pointer;
+    font-weight: bold;
+    white-space: normal;
+    color: var(--active-background);
+    filter: brightness(150%);
+}
+
+.bookmark-tree-folder-title
+{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.bookmark-tree-folder-list
+{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.bookmark-tree-folder-list li
+{
+    padding-bottom: 3px;
+}
+
+.bookmark-link
+{
+    font-family: var(--main-font);
+    color: var(--active-background);
+    filter: brightness(150%);
+    text-decoration: none;
+}
+
+.bookmark-arrow
+{
+    background-image: url('../../images/icons/keyboard_arrow_right-24px.svg');
+}
+
+.site-logo
+{
+    max-height: 20px;
+    max-width: 20px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+    filter: brightness(var(--site-icon-brightness));
+}

@@ -1,0 +1,50 @@
+
+.app-title-bar
+{
+    border-bottom: var(--medium-border);
+    display: flex;
+    padding: var(--main-padding)
+}
+
+.no-bottom-border
+{
+    border-bottom: none;
+}
+
+.titlebar-option
+{
+    cursor: pointer;
+    padding: var(--main-padding);
+    margin: auto 5px auto 5px;
+}
+.app-titlebar-spacer
+{
+    margin-left: auto;
+}
+
+.app-titlebar-button
+{
+    padding: var(--main-padding);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.app-titlebar-button::after
+{
+    content: '●';
+}
+
+.app-titlebar-button.close
+{
+    color: #fc5753;
+}
+
+.app-titlebar-button.min
+{
+    color: #fdbb40;
+}
+
+.app-titlebar-button.max
+{
+    color: #32c747;
+}

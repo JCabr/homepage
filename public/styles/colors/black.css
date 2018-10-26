@@ -1,0 +1,16 @@
+
+:root {
+    --main-background:      #000000;
+    --main-text:            #AAAAAA;
+    --main-font:            'Courier New', 'Courier';
+    --main-padding:         2px 5px 2px 5px;
+    --main-border-color:    #AAAAAA;
+    --main-border-width:    3px;
+    --main-border-line:     solid;
+    --medium-border:        var(--main-border-width) var(--main-border-line) var(--main-border-color);
+    --active-background:    #666666;
+    --inactive-background:  #111111;
+    --active-foreground:    #111111;
+    --inactive-foreground:  #666666;
+    --site-icon-brightness: 100%;
+}
