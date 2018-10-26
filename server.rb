@@ -4,6 +4,8 @@ require 'yaml'
 require_relative 'lib/loading.rb'
 require_relative 'lib/code_running.rb'
 
+# TODO: Change highlight color in editor to match background color.
+
 configure do
     set :port, 9897
 end
