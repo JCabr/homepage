@@ -1,3 +1,4 @@
+#! /usr/bin/ruby
 require 'sinatra'
 require 'sinatra/reloader'
 require 'yaml'
@@ -5,6 +6,21 @@ require_relative 'lib/loading.rb'
 require_relative 'lib/code_running.rb'
 
 # TODO: Change highlight color in editor to match background color.
+
+# TODO: Add option in config to denote syntax highlighting for each language,
+#       that way adding languages would be much easier (assuming there's a
+#       syntax highlighting scheme close enough), as then there would just
+#       be some dynamic JS code generation using the config.
+
+# TODO: Do the same idea as the above, but also with what the process should
+#       be to run and report the output from the code, as that would ensure
+#       that essentially no code would have to be manually written to add 
+#       support for a new language.
+#
+#       This is probably much more complex than the above TODO, but can likely
+#       be done easily enough by having an option under the language code run
+#       config on details like if the code is going to be compiled, and how
+#       compilation/interpretation and running the code should be handled.
 
 configure do
     set :port, 9897
