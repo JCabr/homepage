@@ -2,6 +2,7 @@
 .app-bottom-box
 {
   border-top: var(--medium-border);
+  background-color: var(--code-background);
 }
 
 #code-output {}

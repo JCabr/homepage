@@ -3,7 +3,8 @@
 {
     border-bottom: var(--medium-border);
     display: flex;
-    padding: var(--main-padding)
+    padding: var(--main-padding);
+    background-color: var(--main-background);
 }
 
 .no-bottom-border

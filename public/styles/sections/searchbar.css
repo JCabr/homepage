@@ -3,6 +3,7 @@
 {
     border-bottom: var(--medium-border);
     padding: 7px 5px 5px 10px;
+    background-color: var(--code-background);
 }
 
 form
@@ -12,7 +13,7 @@ form
 
 input[type=text]
 {
-    background-color: var(--main-background);
+    background-color: var(--code-background);
     border: none;
     font-family: var(--main-font);
     font-size: 16px;

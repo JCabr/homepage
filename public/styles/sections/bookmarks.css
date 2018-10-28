@@ -3,6 +3,7 @@
 {
     border-right: var(--medium-border);
     padding: 10px 15px 10px 15px;
+    background-color: var(--main-background);
 }
 
 .bookmark-tree-folder

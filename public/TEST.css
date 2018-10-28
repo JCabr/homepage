@@ -8,12 +8,12 @@
 
 */
 
-.cm-s-TEST.CodeMirror {background: var(--main-background); color: #708394;}
+.cm-s-TEST.CodeMirror {background: var(--code-background); color: #708394;}
 .cm-s-TEST div.CodeMirror-selected
 { background: #090909 !important; }
 .cm-s-TEST .CodeMirror-gutters 
 {
-    background: var(--main-background); border-right: 3px solid var(--main-background);
+    background: var(--code-background); border-right: 3px solid var(--code-background);
 }
 .cm-s-TEST .CodeMirror-linenumber 
 {

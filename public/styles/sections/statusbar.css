@@ -4,6 +4,7 @@
     border-top: var(--medium-border);
     padding: 5px 5px 5px 10px;
     display: flex;
+    background-color: var(--main-background);
 }
 
 .app-status-bar-item

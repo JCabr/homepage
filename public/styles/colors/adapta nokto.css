@@ -1,11 +1,12 @@
 /* #1b2326 #263238 */
 :root {
-    --main-background:      #1b2326;
+    --main-background:      #222d32;
+    --code-background:      #1b2326;
     --main-text:            #CCCCCC;
     --main-font:            'Courier New', 'Courier';
     --main-padding:         2px 5px 2px 5px;
     --main-border-color:    #263238;
-    --main-border-width:    3px;
+    --main-border-width:    1px;
     --main-border-line:     solid;
     --medium-border:        var(--main-border-width) var(--main-border-line) var(--main-border-color);
     --active-background:    #49575E;

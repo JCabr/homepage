@@ -14,10 +14,8 @@
 
 #code-input-field
 {
-    background-color: var(--main-background);
+    background-color: var(--code-background);
     font-family: 'Courier New', Courier, monospace;
-    border: none;
-    border-radius: 0;
     padding: 7px 10px 10px 10px;
     overflow: auto;
     word-break: break-all;
@@ -28,5 +26,5 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-
+    border-bottom: var(--medium-border);
 }
